@@ -1,0 +1,111 @@
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-pagination {
+    padding-bottom: 15px; /* Adjust the value as needed to move the pagination dots */
+  }
+  
+  /* Optionally, you can adjust the color of the pagination dots */
+  .swiper-pagination-bullet {
+    background-color: #ffffff; /* Set your desired background color */
+    opacity: 0.5; /* Set your desired opacity */
+  }
+  
+  /* Optionally, you can adjust the active pagination dot color */
+  .swiper-pagination-bullet-active {
+    background-color: #fff; /* Set your desired background color for the active dot */
+    opacity: 1; /* Set your desired opacity for the active dot */
+  }
+
+.swiper-slide {
+  padding: 2rem 0 0 1.5rem;
+  background: #595959;
+  width: 22rem;
+  height: 30rem;
+  border-radius: 5px;
+}
+.package:nth-child(2){
+    background: linear-gradient(-160deg,var(--green) 2%,rgba(0,0,0,.7) 90%);
+}
+.package:nth-child(2) svg{
+    fill:#fff;
+    stroke: #fff;
+}
+
+.package{
+    /* background: orange; */
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap:1rem;
+    width: 22rem;
+}
+.logo-img{
+    /* stroke: ; */
+    fill:#07f0319a;
+    stroke: #07f0319a;
+    width: 30px;
+    height: 30px;
+}
+.package-name{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.price{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: roboto;
+}
+.points{
+    display: flex;
+    flex-direction: column;
+    gap:.8rem
+}
+.points>span{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap:.7rem
+}
+.ticks{
+    width:15px;
+    height:15px;
+}
+.arrow{
+    width: 20px;
+    height: 20px;
+    transition: .3s ease;
+}
+
+.benefits{
+    margin-top: 1rem;
+    font-size: .95rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: .3s ease;
+}
+.benefits:hover{
+    scale: 1.02;
+    cursor: pointer;
+    padding-left: .3rem;
+}
+.join-btn{
+    display: flex;
+    align-items: center;
+}
+.join-btn button{
+    font-family: Montserrat;
+    font-weight: 550;
+    width: 16rem;
+    padding: .7rem;
+    border-radius: 2.5px;
+    border: none;
+    margin: 3.2rem;
+}

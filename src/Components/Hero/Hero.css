@@ -1,0 +1,253 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    height: 98vh;
+}
+.right-side{
+    flex: 1;
+    background:var(--green) ;
+    position: relative;
+}
+.left-side{
+    /* background: var(--grey); */
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.5rem 2rem 2rem;
+    margin-top: -10px;
+    gap: 1rem;
+
+}
+.animated-text{
+    margin-top:1rem;
+    text-transform: uppercase;
+    font-family:Montserrat;
+    background-color: var(--dark-grey);
+    border-radius: 35px;
+    padding: 20px 30px;
+    color: var(--white);
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.animated-text>div{
+    width: 5rem;
+    height: 80%;
+    background-color: var(--green);
+    position:absolute;
+    border-radius: 3rem;
+    left:8px;
+    animation: moving-div 4s  2s ease-in-out infinite alternate;
+    
+}
+@keyframes moving-div {
+     0%{left:8px}
+    100%{left:16rem;} 
+    
+}
+.animated-text span{
+    word-spacing: 2px;
+    z-index: 1;
+}
+
+.slogan h1{
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 4.3rem;
+    line-height: 4.8rem;
+    margin-bottom: 1rem;
+    word-spacing: 10px;
+}
+.slogan p{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: var(--white);
+    line-height: 1.5rem;
+}
+.figure{
+    display: flex;
+    gap:4rem;
+    color:var(--light-grey);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.number{
+    color: var(--white);
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+.btn-container{
+    margin-top:20px;
+    display: flex;
+    gap: 1rem;
+}
+.btn-container> :nth-child(1){
+    color:var(--white);
+    background: var(--green);
+    border: 0;
+    outline: 0;
+    z-index: 1;
+}
+.btn-container> :nth-child(2){
+    color: var(--white);
+    background: transparent;
+    border: 1px solid var(--green);
+    outline: 0;
+    z-index: 1;
+}
+.hero-blur{
+    background: #74d60088;
+    width: 22rem;
+    height: 30rem;
+    left:0rem;
+    top:0rem;
+}
+
+
+/* Right Side of animation */
+.right-side button{
+    position: absolute;
+    background-color: var(--white);
+    border: none;
+    right:4.8rem;
+    top:2.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.heart-rate{
+    background:var(--grey) ;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 5rem;
+    top:7rem;
+}
+
+.heart-rate img{
+    width: 40px;
+    background-color: transparent;
+}
+.heart-rate p{
+    color: var(--light-grey);
+    font-family: Montserrat;
+}
+.rate{
+    color:var(--white);
+    font-weight: 600;
+    font-size: large;
+    
+}
+.calories{
+    position: absolute;
+    display: flex;
+    background: var(--medium-light-grey);
+    width:16rem;
+    height: 5.5rem;
+    top:30.2rem;
+    left:-30rem;
+    gap:2rem;
+    padding: .5rem .2rem 0rem;
+    border-radius: 2px;
+    
+
+}
+.cal-img{
+    flex:4;
+}
+.cal-img img{
+    position: relative;
+    padding-top: -10px;
+    width:190%;
+    height:90%;
+    object-fit: none;
+    left:15px;
+}
+.cal-num{
+    display: flex;
+    flex-direction: column;
+    flex:10;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+.cal-num :nth-child(1){
+    color: var(--light-grey);
+    font-size: 14px;
+    font-weight: 500;
+}
+.cal-num :nth-child(2){
+    color: var(--white);
+    font-size: 22px;
+}
+.main-img :nth-child(1){
+    position: absolute;
+    width: 49rem;
+    top:12rem;
+    right: 6.5rem;
+    z-index: 1;
+}
+.main-img :nth-child(2){
+    position: absolute;
+    width:300%;
+    left:-37rem;
+    top:-15rem;
+    transform: rotate(-50deg);
+    opacity: .69;
+}
+
+@media screen and (max-width: 767px)  {
+    *{
+        box-sizing: border-box;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .animated-text{
+        font-size: small;
+    }
+    @keyframes moving-div {
+       100%{left:13rem;}   
+   }
+   .slogan h1{
+    font-size: 3.1rem;
+   }
+   .slogan p{
+    font-size: small;
+   }
+   .number{
+    font-size: x-large;
+   }
+   .figure {
+    font-size: .75rem;
+   }
+   .right-side{
+    position: relative;
+    background: none;
+   }
+   .heart-rate{
+    
+    display:none;
+   }
+   .calories{
+    display: none;
+   }
+   .main-img{
+    display: none;
+   }
+   .right-side .btn{
+    display: none;
+   }
+
+   
+}

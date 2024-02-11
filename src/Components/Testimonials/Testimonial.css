@@ -1,0 +1,116 @@
+.Testimonials{
+    display: flex;
+    padding: 3rem 2rem;
+}
+.Left-side{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap:2.3rem;
+}
+.Left-side>:nth-child(1){
+    color: var(--green);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.Left-side>:nth-child(2){
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    font-family: Roboto;
+    display:flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: var(--white);
+    gap:1rem
+}
+.review{
+    line-height: 2rem;
+    color: white;
+    font-weight: 400;
+}
+.Left-side>:nth-child(4){
+    text-transform: uppercase;
+    color: white;
+}
+.Left-side>:nth-child(4)>:nth-child(1){
+    color: var(--green);
+}
+.Right-side{
+    flex:1 1;
+    position: relative;
+    
+}
+.leftarrow{
+    transform: rotate(180deg);
+}
+.img img{
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    top:3rem;
+    right: 8rem;
+    z-index:2;
+}
+.border{
+    width: 17rem;
+    height: 20rem;
+    border:2px solid var(--green);
+    position: absolute;
+    top:2rem;
+    right:9rem;
+}
+.gradient{
+    width: 17rem;
+    height: 20rem;
+    background: linear-gradient(-150deg,var(--green) 10%,rgba(0,0,0,.7) 85%);
+    position: absolute;
+    top:4rem;
+    right:7rem;
+}
+
+.arrows{
+    display: flex;
+    gap:1.2rem;
+    position: absolute;
+    top:20rem;
+    left: 10rem;
+}
+.arrows > *{
+    width:2rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.arrows img:hover{
+    scale: 1.1;
+}
+
+@media screen and (max-width: 767px) {
+    .Testimonials{
+        display: flex;
+        flex-direction: column;
+    }
+    .Right-side{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .img{
+        position: relative;
+        left: 8rem;
+    }
+    .img>:nth-child(1){
+        position: relative;
+        /* top:0; */
+    }
+    .arrows{
+        position: relative;
+        /* display: block; */
+        top:4rem;
+        left:-1rem;
+    }
+}

@@ -1,0 +1,49 @@
+body{
+    background:var(--grey);
+}
+.card{
+    background: var(--medium-light-grey);
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    height: 13rem;
+    color: azure;
+    gap:1rem;
+    padding:1rem 1rem;
+    justify-content: space-around;
+}
+.card:hover{
+    background: linear-gradient(-150deg,var(--green) 10%,rgba(0,0,0,.7) 85%);
+    cursor: pointer;
+}
+.icon{
+    width: 20px;
+    height: 20px; 
+}
+.arrow{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.card>span{
+    color:#fff ;
+    font-weight: 525;
+    font-size: 1rem;
+}
+.card p{
+    font-size: 0.9rem;
+}
+.join-now{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    font-size: .9rem;
+    font-weight: 500;
+    cursor:pointer;
+    
+}
+.join-now>span{
+    transition: .2s ease-in-out;
+}
+.join-now span:hover{
+     transform: scale(1.1);
+}

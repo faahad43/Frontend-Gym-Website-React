@@ -1,0 +1,52 @@
+:root{
+  --white:#fff;
+  --black:#000;
+  --grey:#4b4c4c;
+  /* --grey:#696969; */
+  /* --light-grey:#c0c0c0; */
+  --light-grey:#b4b4b4;
+  --green:	#74d600;
+  --orange:#f6602d;
+  --dark-grey:	#242424;
+  --medium-light-grey:#777777;
+  /* --dark-grey:	#4b4c4c; */
+  
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+body{
+  margin: 0;
+  font-family: Montserrat;
+
+}
+.App{
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.stroke{
+  -webkit-text-stroke:1px white ;
+  text-stroke:1px var(--white);
+  color: transparent;
+}
+.btn{
+  padding: .5rem 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  transition: .5s ease;
+}
+.btn:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+.blur{
+  background: #74d60099;
+  filter:blur(10rem);
+  -webkit-filter: blur(10rem);
+  z-index: -10;
+  border-radius: 50%;
+  position: absolute;
+}

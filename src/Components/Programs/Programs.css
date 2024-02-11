@@ -1,0 +1,38 @@
+.prog-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.6rem;
+    padding: 8rem 0rem 7rem;
+    width: 100vw;
+}
+.heading{
+    color: var(--white);
+    text-transform: uppercase;
+    font-family:Roboto;
+    font-size: 3rem;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 500;
+}
+.heading span:nth-child(2){
+    padding:0rem 4.5rem ;
+}
+
+.program-types{
+    display: flex;
+    flex-direction: row;
+    gap:2.5rem;
+
+}
+@media screen and (max-width: 767px){
+    .heading{
+        font-size: 2.3rem;
+    }
+    .prog-section{
+        margin-top: -8rem;
+    }
+    .program-types{
+        flex-direction: column;
+    }
+}

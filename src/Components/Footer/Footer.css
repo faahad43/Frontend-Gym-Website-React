@@ -1,0 +1,53 @@
+.footer{
+    margin-top: 3rem;
+    border-top:2px solid white ;
+    padding: 4rem 0;
+    position: relative;
+}
+.links button{
+    background: transparent;
+    border: none;
+}
+.links img{
+    width: 2.9rem;
+}
+.flogo{
+    display: flex;
+    justify-content: center;
+}
+.flogo img{
+    width: 11rem;
+    height: 11rem;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap:1.4rem;
+}
+.links button{
+    cursor: pointer;
+}
+.footer-blur-1{
+    bottom: 0;
+    filter: blur(200px);
+    background:rgba(0, 253, 169,.6);
+    width: 26rem;
+    height:12rem;
+    right:15%;
+}
+.footer-blur-2{
+    bottom: 0;
+    filter: blur(200px);
+    /* background: rgba(0,0,0,.4); */
+    width: 26rem;
+    height:12rem;
+    left:15%;
+}
+
+@media screen and (max-width: 767px) {
+    .footer{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}

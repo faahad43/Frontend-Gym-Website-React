@@ -1,0 +1,41 @@
+.Plans{
+    position: relative;
+}
+.plan-heading{
+    margin-bottom: -0.1rem;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 3.2rem;
+    font-style: oblique;
+    text-align: center;
+    font-weight: 600;
+    color:white
+}
+.center{
+    padding: 0rem 4rem;
+}
+.plan-blur-1{
+    width: 25rem;
+    height: 21rem;
+    left:0rem;
+    top:7rem;
+}
+.plan-blur-2{
+    width: 27rem;
+    height: 21rem;
+    right:0rem;
+    top:7rem;
+}
+@media screen and (max-width:767px) {
+    .plan-blur-1,.plan-blur-2{
+        height: 0;
+        width: 0;
+    }
+    .plan-heading{
+        font-size: 2.17rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+}
