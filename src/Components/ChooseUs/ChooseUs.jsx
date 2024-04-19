@@ -1,4 +1,4 @@
-import "../../ChooseUs.css"
+import "./ChooseUs.css"
 import pic1 from "../../assets/pic1.avif";
 import pic2 from "../../assets/pic2.jpg";
 import pic3 from "../../assets/pic3.jpeg";
