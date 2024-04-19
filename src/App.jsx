@@ -1,7 +1,7 @@
 import './App.css'
 import Hero from './Components/Hero/Hero'
 import Programs from './Components/Programs/Programs'
-import ChooseUs from './Components/ChooseUs/chooseUs'
+import ChooseUs from './Components/ChooseUs/ChooseUs'
 import Plan from './Components/Plans/Plan'
 import Join from './Components/Join/Join'
 import Testimonials from './Components/Testimonials/Testimonials'
